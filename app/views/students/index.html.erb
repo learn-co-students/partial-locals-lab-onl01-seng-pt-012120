@@ -2,8 +2,8 @@
 
 <h2><%= pluralize(@students.count, "student") %></h2>
 
-<%= render 'search' %>
+<%= render partial: 'search', locals: {search_term: @query} %>
 
 <%= render partial: 'student', collection: @students %>
 
-<%= console %>
+<%# console %>

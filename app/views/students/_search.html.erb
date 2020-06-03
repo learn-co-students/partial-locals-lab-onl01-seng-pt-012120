@@ -3,3 +3,6 @@
 	<%= text_field_tag :query %>
 	<%= submit_tag "Search", name: nil %>
 <% end -%>
+
+<p><em><%= "Results for: #{search_term}" if search_term %></em></p>
+
