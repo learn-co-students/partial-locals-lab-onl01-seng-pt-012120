@@ -1,0 +1,9 @@
+<h1>Student Index</h1>
+
+<h2><%= pluralize(@students.count, "student") %></h2>
+
+<%= render 'search' %>
+
+<%= render partial: 'student', collection: @students %>
+
+<%= console %>

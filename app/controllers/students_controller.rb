@@ -21,6 +21,7 @@ class StudentsController < ApplicationController
   end
 
   def index
+    byebug
     @students = Student.all
   end
 

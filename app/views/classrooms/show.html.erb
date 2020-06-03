@@ -2,8 +2,8 @@ Classroom Info
 
 <%= render partial: 'classroom', locals: {classroom: @classroom} %>
 <%# byebug %>
-<% @students.each do |a_student| %>
+<%# @students.each do |a_student| %>
 
-	<%= render partial: 'students/student', locals: {student: a_student} %>
+<%= render partial: 'students/student', collection: @classroom.students %>
 
-<% end %>
+<%# end %>
