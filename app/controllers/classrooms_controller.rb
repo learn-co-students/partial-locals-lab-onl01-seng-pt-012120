@@ -4,6 +4,7 @@ class ClassroomsController < ApplicationController
     @student = @classroom.oldest_student
   end
 
+
   def index
     @classrooms = Classroom.all
   end
